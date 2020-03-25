@@ -2,7 +2,6 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class GroceryStoreMain {
@@ -24,7 +23,7 @@ public class GroceryStoreMain {
                 new Foods("Salmon", 8,100),
                 new Foods("Dorado", 7.5, 150))));
         fishStore.setSquareStore(55.5);
-        System.out.println(fishStore);
+        //System.out.println(fishStore);
 
         vegetableStore.setFoods(new ArrayList<>(Arrays.asList(
                 new Foods("Greens", 1.5, 10),
@@ -32,7 +31,7 @@ public class GroceryStoreMain {
                 new Foods("Oranges", 3.5, 150),
                 new Foods("Apples", 2.0, 150))));
         vegetableStore.setSquareStore(100);
-        System.out.println(vegetableStore);
+        //System.out.println(vegetableStore);
 
         meatStore.setFoods(new ArrayList<>(Arrays.asList(
                 new Foods("Poultry", 2, 150),
@@ -44,7 +43,7 @@ public class GroceryStoreMain {
                 new Foods("Snickers", 5, 50),
                 new Foods("Mars", 5.5,60),
                 new Foods("Kit-Kat", 4.5, 70))));
-        sweetStore.setSquareStore(40);
+        sweetStore.setSquareStore(-40);
 
         storeList.forEach(a -> {
             a.sale();

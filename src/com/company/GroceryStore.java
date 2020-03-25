@@ -36,7 +36,13 @@ public abstract class GroceryStore {
     }
 
     public void setSquareStore(double squareStore) {
-        this.squareStore = squareStore;
+       try{
+           if(squareStore > 0)
+               this.squareStore = squareStore;
+       }catch (IllegalArgumentException e){
+           System.out.println("The store area cannot be less than or equal to zero!");
+       }
+
     }
 
     public abstract void sale();
