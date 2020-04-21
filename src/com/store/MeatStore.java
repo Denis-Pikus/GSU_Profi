@@ -1,4 +1,4 @@
-package com.company;
+package com.store;
 
 import java.util.ArrayList;
 import java.util.Objects;
@@ -7,7 +7,7 @@ public class MeatStore extends GroceryStore {
 
     public MeatStore() {}
 
-    public MeatStore(ArrayList<Foods> foods, double squareStore) {
+    public MeatStore(ArrayList<String> foods, double squareStore) {
         super(foods, squareStore);
     }
 

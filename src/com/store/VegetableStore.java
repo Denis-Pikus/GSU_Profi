@@ -1,13 +1,13 @@
-package com.company;
+package com.store;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class VegetableStore extends GroceryStore{
+public class VegetableStore extends GroceryStore {
 
     public VegetableStore(){}
 
-    public VegetableStore(ArrayList<Foods> foods, double squareStore) {
+    public VegetableStore(ArrayList<String> foods, double squareStore) {
         super(foods, squareStore);
     }
 

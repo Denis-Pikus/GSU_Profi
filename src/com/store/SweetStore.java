@@ -1,29 +1,28 @@
-package com.company;
+package com.store;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class FishStore extends GroceryStore {
+public class SweetStore extends GroceryStore {
 
-    public FishStore() {
+    public SweetStore() {
     }
 
-    public FishStore(ArrayList<Foods> foods, double squareStore) {
+    public SweetStore(ArrayList<String> foods, double squareStore) {
         super(foods, squareStore);
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof FishStore)) return false;
-        FishStore that = (FishStore) o;
+        if (!(o instanceof SweetStore)) return false;
+        SweetStore that = (SweetStore) o;
         return Double.compare(that.getSquareStore(), getSquareStore()) == 0 &&
                 Objects.equals(getFoods(), that.getFoods());
     }
 
     @Override
     public void sale() {
-        System.out.println("Hello, here sell fishes!");
+        System.out.println("Hello, here sell sweets!");
     }
-
 }

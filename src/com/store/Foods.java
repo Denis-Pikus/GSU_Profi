@@ -1,4 +1,4 @@
-package com.company;
+package com.store;
 //Класс описывающий продукты продаваемые в магазине
 
 public class Foods {
